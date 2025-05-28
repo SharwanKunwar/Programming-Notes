@@ -13,11 +13,11 @@ const router = createBrowserRouter([
     errorElement: <ErrorPage />, // <-- Add error handler
     children: [
       {
-        path: '',
+        path: '/',
         element: <Home/>
       },
       {
-        path: 'home',
+        path: '/home',
         element: <Home/>
       }
     ]
