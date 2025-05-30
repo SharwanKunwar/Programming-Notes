@@ -1,4 +1,4 @@
-import SecondSection from "./Home/secondSection";
+import HomeSecondSection from "./Home/HomeSecondSection";
 
 
 function Home() {
@@ -14,7 +14,7 @@ function Home() {
 
   return (
     <>
-      <div style={{ backgroundImage: "url('/iconsImg.png')" }} className=' w-screen h-screen md:flex justify-center items-center gap-10 bg-cover bg-center relative'>
+      <div style={{ backgroundImage: "url('iconsImg.png')" }} className=' w-screen h-screen md:flex justify-center items-center gap-10 bg-cover bg-center relative'>
         <div style={style01} className=" flex justify-center items-center md:w-full md:h-full w-full h-6/12">
           <section className=" w-full md:h-full flex flex-col md:justify-end justify-center pl-5 pr-5 ">
           <div className="text-center z-10 md:bg-white h-[250px] md:pt-7">
@@ -32,12 +32,12 @@ function Home() {
         <div style={style01} className="md:absolute mb-60 md:w-6/11 md:h-full w-full h-6/12">
               <spline-viewer className="md:block hidden" url="https://prod.spline.design/MBaQZNt-ZoX1US9C/scene.splinecode"></spline-viewer>
               <div className="md:hidden block mt-20 p-7">
-                <img src="/SVG/svg04.svg" alt="svg" />
+                <img src="svg04.svg" alt="svg" />
               </div>
         </div>
         
       </div>
-      <SecondSection/>
+      <HomeSecondSection/>
     </>
   );
 }

@@ -1,7 +1,7 @@
 import React from 'react'
 
-function SecondSection() {
-      const style01 = {
+function HomeSecondSection() {
+  const style01 = {
   display: "flex",
   justifyContent: "center",
   alignItems: "center",
@@ -16,4 +16,4 @@ function SecondSection() {
   )
 }
 
-export default SecondSection
+export default HomeSecondSection
