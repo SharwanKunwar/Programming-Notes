@@ -32,7 +32,7 @@ function Home() {
         <div style={style01} className="md:absolute mb-60 md:w-6/11 md:h-full w-full h-6/12">
               <spline-viewer className="md:block hidden" url="https://prod.spline.design/MBaQZNt-ZoX1US9C/scene.splinecode"></spline-viewer>
               <div className="md:hidden block mt-20 p-7">
-                <img src="/SVG/svg04.svg" alt="svg" />
+                <img src="/svg04.svg" alt="svg" />
               </div>
         </div>
         
