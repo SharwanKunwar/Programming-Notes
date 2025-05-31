@@ -12,6 +12,8 @@ function Home() {
 };
 
 
+
+
   return (
     <>
       <div style={{ backgroundImage: "url('iconsImg.png')" }} className=' w-screen h-screen md:flex justify-center items-center gap-10 bg-cover bg-center relative'>
