@@ -41,8 +41,8 @@ const timeout =  setTimeout(() => {
 
 
 return (
-    <div className="w-full h-[100px] flex justify-center  text-black sticky top-0 z-50">
-    <nav className="bg-white/70  backdrop-blur-md rounded-lg w-[100%] h-[70%] flex justify-between items-center md:pl-30 pl-10 pr-10 md:pr-30 gap-10">
+    <div className="w-full h-[100px] flex justify-center  text-black absolute top-0 z-50">
+    <nav className="bg-white/70  backdrop-blur-md w-[100%] h-[70%] flex justify-between items-center md:pl-30 pl-10 pr-10 md:pr-30 gap-10">
         
         {/* Logo */}
         <div className="w-[25%] h-full flex justify-start items-center">

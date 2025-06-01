@@ -8,7 +8,7 @@ function AboutPage() {
   backgroundImage: "url('gradient.png')",
 };
   return (
-    <div id='about-us' style={style01} className=' w-screen h-screen flex flex-col md:flex-row gap-5 p-5'>
+    <div style={style01} className=' w-screen h-screen flex flex-col md:flex-row gap-5 p-5'>
       <div className='w-full md:w-6/12 h-6/12 md:h-full flex justify-center items-center'>
       <div className='bg-white shadow-lg w-[90%] h-[80%] md:h-[60%] pr-4 rounded-2xl flex justify-center items-end'>
         <img src="AboutImg.svg" alt="img" />

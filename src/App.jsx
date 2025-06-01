@@ -9,6 +9,7 @@ function App() {
     <>
       
         <Navbar />
+        <div className=" w-full h-[80px] md:block "></div>
         <Outlet />
       
     </>
