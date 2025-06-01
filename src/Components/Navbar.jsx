@@ -106,28 +106,42 @@ return (
         />
     )}
 
-      {/* Sliding Popup Menu */}
-    <div
-        className={`fixed top-0 left-0 h-full w-64 bg-white/80 backdrop-blur-lg shadow-lg transform md:hidden ${
-        isOpen ? 'translate-x-0' : '-translate-x-full'
-        } transition-transform duration-300 ease-in-out z-40`}
-    >
-        {/* Menu Content */}
-        <div className='bg-gray-50 w-full h-[60px] flex justify-start items-center text-[20px] font-bold border-b-1 pl-2'>Programming Notes</div>
-        <ul className="mt-5 space-y-6 text-black text-xl pl-6">
-        {navItems.map((item, index) => (
-            <li 
-            key={index} 
-            className={`${activeItem === item.toLowerCase() ? 'text-blue-400 ' : ''}`}>
-            <Link 
-            to={`/${item.toLowerCase()}`} 
-            onClick={() => handleItemClick(item.toLowerCase())}>
-            {item}
-            </Link>
-            </li>
-            ))}
-        </ul>
-    </div>
+{/* Sliding Popup Menu */}
+<div
+  className={`fixed top-0 right-0 h-full w-[80%] bg-white/80 backdrop-blur-lg shadow-lg transform md:hidden ${
+    isOpen ? 'translate-x-0' : 'translate-x-full'
+  } transition-transform duration-300 ease-in-out z-40`}
+>
+  {/* Header with close button */}
+  <div className='w-full h-[90px] flex justify-between items-center px-9 pr-10 border-b border-gray-300'>
+    <span className="text-[22px] font-bold">Menu</span>
+    <button onClick={() => setIsOpen(false)} className="text-3xl font-bold">
+      &times;
+    </button>
+  </div>
+
+  {/* Animated nav items */}
+  <ul className="mt-5 space-y-6 text-black text-xl pl-6">
+    {navItems.map((item, index) => (
+      <motion.li
+        key={index}
+        initial={{ x: 50, opacity: 0 }}
+        animate={{ x: 0, opacity: 1 }}
+        exit={{ x: 50, opacity: 0 }}
+        transition={{ duration: 0.3, delay: index * 0.05 }}
+        className={`${activeItem === item.toLowerCase() ? 'bg-sky-400 w-[100%] rounded-tl-2xl rounded-bl-2xl text-white' : ''}`}
+      >
+        <Link className='text-[20px] flex justify-center w-[90%] h-[50px] items-center'
+          to={`/${item.toLowerCase()}`}
+          onClick={() => handleItemClick(item.toLowerCase())}
+        >
+          {item}
+        </Link>
+      </motion.li>
+    ))}
+  </ul>
+</div>
+
     </div>
 );
 }
