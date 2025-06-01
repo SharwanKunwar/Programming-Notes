@@ -1,3 +1,4 @@
+import AboutPage from "./Home/AboutPage";
 import HomeSecondSection from "./Home/HomeSecondSection";
 import {motion} from 'motion/react';
 
@@ -25,7 +26,7 @@ function Home() {
             initial={{ y: -50, opacity: 0, filter: 'blur(5px)' }}
             animate={{ y: 0, opacity: 1, filter: 'blur(0px)' }}
             transition={{
-              duration: 1,
+              duration: 0.5,
               delay:0.1,
               ease: 'easeOut',
             }}
@@ -34,7 +35,7 @@ function Home() {
             initial={{ y: -50, opacity: 0, filter: 'blur(5px)' }}
             animate={{ y: 0, opacity: 1, filter: 'blur(0px)' }}
             transition={{
-              duration: 1,
+              duration: 0.5,
               delay:0.2,
               ease: 'easeOut',
             }}
@@ -43,7 +44,7 @@ function Home() {
             initial={{ y: -50, opacity: 0, filter: 'blur(5px)' }}
             animate={{ y: 0, opacity: 1, filter: 'blur(0px)' }}
             transition={{
-              duration: 1,
+              duration: 0.5,
               delay:0.3,
               ease: 'easeOut',
             }}
@@ -54,7 +55,7 @@ function Home() {
             initial={{ y: -50, opacity: 0, filter: 'blur(5px)' }}
             animate={{ y: 0, opacity: 1, filter: 'blur(0px)' }}
             transition={{
-              duration: 1,
+              duration: 0.5,
               delay:0.4,
               ease: 'easeOut',
             }}
@@ -66,13 +67,14 @@ function Home() {
         </div>
         <div style={style01} className="md:absolute mb-60 md:w-6/11 md:h-full w-full h-6/12">
               <spline-viewer className="md:block hidden" url="https://prod.spline.design/MBaQZNt-ZoX1US9C/scene.splinecode"></spline-viewer>
-              <div className="md:hidden block mt-20 p-7">
+              <div className="md:hidden block mt-10 p-7">
                 <img src="/svg04.svg" alt="svg" />
               </div>
         </div>
         
       </div>
       <HomeSecondSection/>
+      <AboutPage/>
     </>
   );
 }

@@ -49,7 +49,7 @@ return (
         <h1 className="md:font-bold md:text-2xl text-[18px] md:block hidden">Programming- </h1>
         <motion.span
         className='text-2xl font-bold'
-        initial={{y: -100, opacity: 0}}
+        initial={{y: -0, opacity: 0}}
         animate={{
             y:0,
             opacity:100
