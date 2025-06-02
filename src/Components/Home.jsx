@@ -2,6 +2,7 @@ import HomeSecondSection from "./Home/HomeSecondSection";
 import About from "./Home/About";
 import {motion} from 'motion/react';
 import SocialLinks from "./SocialLinks";
+import { Link } from "react-router";
 
 
 function Home() {
@@ -54,6 +55,7 @@ function Home() {
             className="text-gray-700">
             Get concise, well-organized notes on various programming topics to speed up your learning.
             </motion.p>
+            <Link to="/Notes" >
             <motion.button 
             initial={{ y: -50, opacity: 0, filter: 'blur(5px)' }}
             animate={{ y: 0, opacity: 1, filter: 'blur(0px)' }}
@@ -65,12 +67,13 @@ function Home() {
             className="bg-blue-600 text-white md:px-10 px-10 md:mt-7 mt-10  py-2 rounded hover:bg-blue-700">
               Explore Notes
             </motion.button>
+            </Link>
           </div>
           </section>
         </div>
         <div style={style01} className="md:absolute md:mb-50 md:w-6/11 md:h-full">
               <spline-viewer className="md:block hidden" url="https://prod.spline.design/MBaQZNt-ZoX1US9C/scene.splinecode"></spline-viewer>
-              <div className="md:hidden md:mt-10 mt-10 p-3 pt-7 flex justify-center items-center">
+              <div className="md:hidden md:mt-10 mt-10 p-3 pt-0 flex justify-center items-center">
                 <img src="/svg04.svg" alt="svg" />
               </div>
         </div>

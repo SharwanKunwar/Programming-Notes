@@ -93,9 +93,9 @@ return (
 
           {/* Desktop Social Icons */}
         <section className="md:w-full md:h-full md:flex md:items-center md:justify-end md:gap-5 hidden">
-            <a href="#facebook"><FaFacebook size={24} className="text-blue-600 cursor-pointer hover:text-blue-400 hover:border-b-2" /></a>
-            <a href="#instagram"><FaInstagram size={24} className="text-pink-500 cursor-pointer hover:text-pink-400 hover:border-b-2" /></a>
-            <a href="#github"><FaGithub size={24} className="text-blue-600 cursor-pointer hover:text-blue-400 hover:border-b-2" /></a>
+            <a href="#facebook"><FaFacebook size={25} className="text-blue-600 cursor-pointer hover:text-blue-400 hover:border-b-2" /></a>
+            <a href="#instagram"><FaInstagram size={25} className="text-pink-500 cursor-pointer hover:text-pink-400 hover:border-b-2" /></a>
+            <a href="https://github.com/SharwanKunwar"><FaGithub size={25} className="text-blue-600 cursor-pointer hover:text-blue-400 hover:border-b-2" /></a>
         </section>
         </div>
     </nav>
