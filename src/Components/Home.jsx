@@ -70,7 +70,7 @@ function Home() {
         </div>
         <div style={style01} className="md:absolute md:mb-50 md:w-6/11 md:h-full">
               <spline-viewer className="md:block hidden" url="https://prod.spline.design/MBaQZNt-ZoX1US9C/scene.splinecode"></spline-viewer>
-              <div className="md:hidden md:mt-10 mt-10 p-3 pt-10 flex justify-center items-center">
+              <div className="md:hidden md:mt-10 mt-10 p-3 pt-7 flex justify-center items-center">
                 <img src="/svg04.svg" alt="svg" />
               </div>
         </div>
