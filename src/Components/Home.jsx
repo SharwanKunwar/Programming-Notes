@@ -33,7 +33,7 @@ function Home() {
               delay:0.1,
               ease: 'easeOut',
             }}
-            className="text-4xl font-bold md:mb-2 mb-4 ">Download Programming Notes Easily</motion.h1>
+            className="text-4xl font-bold md:mb-2 mb-3 ">Download Programming Notes Easily</motion.h1>
             <motion.h3
             initial={{ y: -50, opacity: 0, filter: 'blur(5px)' }}
             animate={{ y: 0, opacity: 1, filter: 'blur(0px)' }}
@@ -70,7 +70,7 @@ function Home() {
         </div>
         <div style={style01} className="md:absolute md:mb-50 md:w-6/11 md:h-full">
               <spline-viewer className="md:block hidden" url="https://prod.spline.design/MBaQZNt-ZoX1US9C/scene.splinecode"></spline-viewer>
-              <div className="md:hidden md:mt-10 mt-15 p-3 pt-10 flex justify-center items-center">
+              <div className="md:hidden md:mt-10 mt-10 p-3 pt-10 flex justify-center items-center">
                 <img src="/svg04.svg" alt="svg" />
               </div>
         </div>
