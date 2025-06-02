@@ -1,6 +1,7 @@
-import AboutPage from "./Home/AboutPage";
 import HomeSecondSection from "./Home/HomeSecondSection";
+import About from "./Home/About";
 import {motion} from 'motion/react';
+import SocialLinks from "./SocialLinks";
 
 
 function Home() {
@@ -18,7 +19,7 @@ function Home() {
 
   return (
     <>
-      <div style={{ backgroundImage: "url('iconsImg.png')" }} className=' w-screen h-screen md:flex justify-center items-center gap-10 bg-cover bg-center relative md:pt-10'>
+      <div style={{ backgroundImage: "url('iconsImg.png')" }} className=' w-screen md:h-screen h-6/6 md:flex justify-center items-center gap-10 bg-cover bg-center relative md:pt-10'>
         
         <div style={style01} className=" flex justify-center items-center md:w-full md:h-full w-full h-6/12 md:mt-20">
         
@@ -32,7 +33,7 @@ function Home() {
               delay:0.1,
               ease: 'easeOut',
             }}
-            className="text-4xl font-bold mb-2 ">Download Programming Notes Easily</motion.h1>
+            className="text-4xl font-bold md:mb-2 mb-4 ">Download Programming Notes Easily</motion.h1>
             <motion.h3
             initial={{ y: -50, opacity: 0, filter: 'blur(5px)' }}
             animate={{ y: 0, opacity: 1, filter: 'blur(0px)' }}
@@ -41,7 +42,7 @@ function Home() {
               delay:0.2,
               ease: 'easeOut',
             }}
-            className="text-2xl mb-5">Programming, Frameworks, Libraries, Databases, AWS etc.</motion.h3>
+            className="text-2xl md:mb-5 mb-5">Programming, Frameworks, Libraries, Databases, AWS etc.</motion.h3>
             <motion.p
             initial={{ y: -50, opacity: 0, filter: 'blur(5px)' }}
             animate={{ y: 0, opacity: 1, filter: 'blur(0px)' }}
@@ -61,22 +62,23 @@ function Home() {
               delay:0.4,
               ease: 'easeOut',
             }}
-            className="bg-blue-600 text-white md:px-10 px-4 mt-7 py-2 rounded hover:bg-blue-700">
+            className="bg-blue-600 text-white md:px-10 px-10 md:mt-7 mt-10  py-2 rounded hover:bg-blue-700">
               Explore Notes
             </motion.button>
           </div>
           </section>
         </div>
-        <div style={style01} className="md:absolute mb-50 md:w-6/11 md:h-full">
+        <div style={style01} className="md:absolute md:mb-50 md:w-6/11 md:h-full">
               <spline-viewer className="md:block hidden" url="https://prod.spline.design/MBaQZNt-ZoX1US9C/scene.splinecode"></spline-viewer>
-              <div className="md:hidden block mt-10 p-7">
+              <div className="md:hidden md:mt-10 mt-15 p-3 pt-10 flex justify-center items-center">
                 <img src="/svg04.svg" alt="svg" />
               </div>
         </div>
         
+      <SocialLinks/>
       </div>
       <HomeSecondSection/>
-      <AboutPage/>
+      <About/>
     </>
   );
 }

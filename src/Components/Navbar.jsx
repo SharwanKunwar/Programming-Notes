@@ -6,7 +6,7 @@ import { useLocation } from 'react-router-dom';
 import {motion} from 'motion/react';
 
 function Navbar() {
-const navItems = ['Home', 'About', 'Notes', 'Contact','Projects'];
+const navItems = ['Home', 'Notes', 'Contact','Projects'];
 const [isOpen, setIsOpen] = useState(false);
 
   // Highlighted: Using useLocation to get the current route
@@ -45,10 +45,12 @@ return (
     <nav className="bg-white/70  backdrop-blur-md w-[100%] h-[70%] flex justify-between items-center md:pl-30 pl-10 pr-10 md:pr-30 gap-10">
         
         {/* Logo */}
-        <div className="w-[25%] h-full flex justify-start items-center">
-        <h1 className="md:font-bold md:text-2xl text-[18px] md:block hidden">Programming- </h1>
+        <div className="w-[25%] h-full flex justify-start items-center ">
+        <a href="/"><h1 className="md:font-bold md:text-2xl text-[18px] md:block hidden">Programming- </h1></a>
+        
         <motion.span
-        className='text-2xl font-bold'
+        onClick={() => window.location.reload()}
+        className='text-2xl font-bold cursor-pointer'
         initial={{y: -0, opacity: 0}}
         animate={{
             y:0,
@@ -91,9 +93,9 @@ return (
 
           {/* Desktop Social Icons */}
         <section className="md:w-full md:h-full md:flex md:items-center md:justify-end md:gap-5 hidden">
-            <FaFacebook size={24} className="text-blue-600 cursor-pointer hover:text-blue-400 hover:border-b-2" />
-            <FaInstagram size={24} className="text-pink-500 cursor-pointer hover:text-pink-400 hover:border-b-2" />
-            <FaGithub size={24} className="text-blue-600 cursor-pointer hover:text-blue-400 hover:border-b-2" />
+            <a href="#facebook"><FaFacebook size={24} className="text-blue-600 cursor-pointer hover:text-blue-400 hover:border-b-2" /></a>
+            <a href="#instagram"><FaInstagram size={24} className="text-pink-500 cursor-pointer hover:text-pink-400 hover:border-b-2" /></a>
+            <a href="#github"><FaGithub size={24} className="text-blue-600 cursor-pointer hover:text-blue-400 hover:border-b-2" /></a>
         </section>
         </div>
     </nav>
