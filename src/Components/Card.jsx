@@ -19,9 +19,15 @@ const handleClick = (e) => {
       </div>
       <div className=' w-full h-6/12'>
       <h1 className='text-center text-2xl font-bold pt-5'>{title}</h1>
-      <p className='pt-2 pb-3 md:pl-4 md:pr-1 px-4 text-gray-400 '>{des}</p>
+      <p className='pt-2 pb-3 md:pl-4 md:pr-1 pr-5 pl-10 text-gray-400 '>{des}</p>
       <section className='w-full flex justify-center mt-3'>
-        <button onClick={handleClick} id={id} className='bg-sky-400 text-white font-medium w-[80%] h-[45px] rounded-lg'>Download Now</button>
+        <button 
+  onClick={handleClick} 
+  id={id} 
+  className='bg-sky-400 text-white font-medium w-[80%] h-[45px] rounded-lg shadow-sm hover:shadow-md hover:bg-sky-300 hover:font-bold active:shadow-md active:bg-sky-300 active:font-bold focus:ring-1 focus:ring-sky-400'>
+  Download Now
+</button>
+
       </section>
       </div>
     </div>
