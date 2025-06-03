@@ -76,9 +76,8 @@ function Home() {
         <div style={style01} className="md:absolute md:mb-50 md:w-6/11 md:h-full">
           {/* Fallback image before spline loads */}
           {!splineLoaded && (
-            <div className="hidden md:flex justify-center items-center h-full">
+            <div className="hidden md:flex justify-center items-center h-full absolute">
               <img src="/svg04.svg" alt="Loading 3D" className="w-full h-6/12 object-contain" />
-              <h1>Loading 3D model ...</h1>
             </div>
           )}
           {/* Spline Viewer */}
