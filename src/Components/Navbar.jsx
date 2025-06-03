@@ -30,7 +30,7 @@ function Navbar() {
     return () => clearTimeout(timeout);
   }, []);
 
-  // Lock scroll when mobile menu is open
+  // Locking scroll when mobile menu is open
   useEffect(() => {
     if (isOpen) {
       document.body.style.overflow = 'hidden';
