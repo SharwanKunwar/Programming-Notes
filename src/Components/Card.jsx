@@ -4,6 +4,7 @@ import React from 'react'
 function Card({imgLink,title,des,id,view}) {
 
 const handleClick = (e) => {
+  alert("Thanks to CodeWithHarry for providing helpful notes and resources that made learning easier! 🙏");
     if (e.target.id === id && view) {
       window.open(view, '_blank');
     }else if(e.target.id === id){
