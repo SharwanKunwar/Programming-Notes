@@ -57,7 +57,7 @@ function Home() {
                 className="text-gray-700"
               >
                 {/* Get concise, well-organized notes on various programming topics to speed up your learning. */}
-                Tips and triks enhance your programming skills.
+                Tips and tricks with zero risk, boost your skills real smooth and brisk!
               </motion.p>
               <Link to="/Notes">
                 <motion.button
