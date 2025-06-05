@@ -2,14 +2,18 @@ import { motion } from 'motion/react';
 
 
 
-function Card({ imgLink, title, des, id, view }) {
+function Card({isAvailable, imgLink, title, des, id, view }) {
+
+
   const handleClick = (e) => {
-    alert("Thanks to CodeWithHarry for providing helpful notes and resources that made learning easier! 🙏");
-    if (e.target.id === id && view) {
+    if (e.target.id === 'c') {
+      alert("Thanks to CodeWithHarry for providing helpful notes and resources that made learning easier! 🙏");
       window.open(view, '_blank');
-    } else if (e.target.id === id) {
-      alert(`"${id} Coming Soon !!!"`);
-    } else {
+    }else if(e.target.id === 'ReactInterview'){
+      alert("Thanks to Khushi_Kumari for providing helpful notes and resources that made learning easier! 🙏");
+      window.open(view, '_blank');
+    }
+     else {
       alert("Not added yet. Check later.");
     }
   };
@@ -22,6 +26,9 @@ function Card({ imgLink, title, des, id, view }) {
       className='bg-gray-50/30 w-[400px] md:w-[300px] h-[400px] rounded-2xl flex justify-center items-center flex-col shadow-lg border-1 border-white backdrop-blur-2xl'
     >
       <div className='w-full h-6/17 flex justify-center items-center'>
+      {isAvailable &&(
+        <div className='bg-green-600 absolute mt-29 ml-24 w-[20px] h-[20px] rounded-full'></div>
+      )}
         <img className='bg-gray-50 w-[150px] rounded-full h-[150px] p-5 shadow-md' src={imgLink} alt="img" />
       </div>
       <div className='w-full h-6/12'>
