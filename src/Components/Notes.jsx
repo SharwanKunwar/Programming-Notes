@@ -15,7 +15,7 @@ function Notes() {
       <div className='w-full h-[100px] flex justify-center items-end border-b-1 pb-2 text-4xl font-mono font-bold'>Interview Notes</div>
         <div className='flex justify-center items-center flex-wrap gap-10 md:pl-30 p-9 pb-20'>
         <Card isAvailable ={true} view ="/InterviewNotes/ReactInterview.pdf" imgLink={"react.svg"} title={"React Interview Notes"} des={"Download concise and curated React Interview Notes – perfect for quick revision and prep!"} id={"ReactInterview"}/>
-        <Card isAvailable ={false} view ="/NotesPdfs/c.pdf" imgLink={"react.svg"} title={"Comming soon !!!"} des={"C is a high-level, general-purpose language known for its efficiency, speed, and control."} id={"c"}/>
+        <Card isAvailable ={false} view ="/NotesPdfs/c.pdf" imgLink={"react.svg"} title={"Comming soon !!!"} des={"C is a high-level, general-purpose language known for its efficiency, speed, and control."} id={"xyz"}/>
         
       </div>
       
