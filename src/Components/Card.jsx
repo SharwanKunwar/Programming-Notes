@@ -27,7 +27,7 @@ function Card({isAvailable, imgLink, title, des, id, view }) {
     >
       <div className='w-full h-6/17 flex justify-center items-center'>
       {isAvailable &&(
-        <div className='bg-green-600 absolute mt-29 ml-24 w-[20px] h-[20px] rounded-full'></div>
+        <div className='bg-green-600 absolute mt-29 ml-24 w-[20px] h-[20px] rounded-full shadow-sm'></div>
       )}
         <img className='bg-gray-50 w-[150px] rounded-full h-[150px] p-5 shadow-md' src={imgLink} alt="img" />
       </div>
