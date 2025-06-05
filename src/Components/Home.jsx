@@ -56,7 +56,8 @@ function Home() {
                 transition={{ duration: 0.5, delay: 0.3, ease: 'easeOut' }}
                 className="text-gray-700"
               >
-                Get concise, well-organized notes on various programming topics to speed up your learning.
+                {/* Get concise, well-organized notes on various programming topics to speed up your learning. */}
+                Tips and triks enhance your programming skills.
               </motion.p>
               <Link to="/Notes">
                 <motion.button
