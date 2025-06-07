@@ -12,6 +12,15 @@ function Card({isAvailable, imgLink, title, des, id, view }) {
     }else if(e.target.id === 'ReactInterview'){
       alert("Thanks to Khushi_Kumari for providing helpful notes and resources that made learning easier! 🙏");
       window.open(view, '_blank');
+    }else if(e.target.id === 'JavaScriptforReact'){
+      alert("Thanks to Khushi_Kumari for providing helpful notes and resources that made learning easier! 🙏");
+      window.open(view, '_blank');
+    }else if(e.target.id === 'JavaScript'){
+      alert("Thanks to unknown for providing helpful notes and resources that made learning easier! 🙏");
+      window.open(view, '_blank');
+    }else if(e.target.id === 'JavaBackendInterviewPreparation'){
+      alert("Thanks to unknown for providing helpful notes and resources that made learning easier! 🙏");
+      window.open(view, '_blank');
     }
      else {
       alert("Not added yet. Check later.");
